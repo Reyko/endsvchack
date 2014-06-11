@@ -6,10 +6,18 @@ Given(/^a Volunteer exists$/) do
     :skype => Faker::Internet.user_name,
     :role => "counsellor",
     #:skills => "communication", 
-    :relevant_experience => Faker::Lorem.paragraph,
+    :relevant_exp => Faker::Lorem.paragraph,
     #:base_location => "london",
     :work_remote => "yes",
-    :travel_expenses => "yes")
+    :travel_expenses => "yes",
+    :password => "password")
+end
+
+Given(/^they are signed in$/) do
+  visit new_user_session_path
+  fill_in("Email", :with => @volunteer.email)
+  fill_in("Password", :with => "password")
+  click_button("Sign in")
 end
 
 Given(/^the user is on the edit profile page$/) do
@@ -32,7 +40,7 @@ When(/^the user updates their basic info$/) do
   #fill_in("Skills", :with => "programming")
   fill_in("Relevant experience", :with => @experience)
   #fill_in("Base location", :with => "Spain")
-  fill_in("Work remote?", :with => "yes")
+  fill_in("Can you work remote?", :with => "yes")
   fill_in("Can you cover your travel expenses?", :with => "yes")
 end
 
