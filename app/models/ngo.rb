@@ -1,2 +1,2 @@
-class Ngo < ActiveRecord::Base
+class Ngo < User
 end

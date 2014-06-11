@@ -3,6 +3,11 @@
     margin-top:120px;
 }
 
+h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
 /*######## Smart Green ########*/
 .smart-green {
     width: 400px;
