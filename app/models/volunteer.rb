@@ -1,2 +1,3 @@
 class Volunteer < User
+
 end
