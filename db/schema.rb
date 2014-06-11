@@ -43,6 +43,7 @@ ActiveRecord::Schema.define(version: 20140611212651) do
     t.boolean  "work_remote"
     t.boolean  "travel_expenses"
     t.string   "type"
+    t.string   "training"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
