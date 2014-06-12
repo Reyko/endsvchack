@@ -23,7 +23,7 @@
 
 <body cz-shortcut-listen="true">
   <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-
+     <div class="container-fluid">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -36,12 +36,13 @@
       <div class="navbar-collapse collapse">
 
       <ul class="nav navbar-nav  navbar-right">
+        <li><%=link_to 'Volunteers',volunteers_path %></li>
         <li class="active"><%= link_to "Register",new_user_registration_path %></li>
         <li><%=link_to 'Sign in',user_session_path %></li>
       </ul>
  
       </div><!--/.navbar-collapse -->
- 
+    </div>
   </div>
 
 <% if notice %>
@@ -54,7 +55,7 @@
 
 
 <footer>
-  <p>© #endsvchack 2014</p>
+   <%= image_tag "endsvchack.jpg",:id => "image-end" %>
 </footer>
 </div> 
 

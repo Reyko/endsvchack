@@ -6,6 +6,10 @@ class UsersController < ApplicationController
     
   end
 
+  def edit
+    
+
+  end
 
   def update
 
@@ -14,7 +18,7 @@ class UsersController < ApplicationController
   end
 
   def allowed_params #whitelist
-    params.require(:user).permit(:first_name, :last_name, :email, :mobile) #for each attribute in the model /white_listed
+    params.require(:user).permit(:first_name, :country,:city,:last_name, :email, :mobile) #for each attribute in the model /white_listed
   end  
 
 end

@@ -11,10 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140611212651) do
+ActiveRecord::Schema.define(version: 20140612032723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cities", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "countries", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "iso"
+    t.string   "iso3"
+    t.string   "numcode"
+    t.string   "name"
+  end
 
   create_table "ngos", force: true do |t|
     t.datetime "created_at"
@@ -44,6 +58,8 @@ ActiveRecord::Schema.define(version: 20140611212651) do
     t.boolean  "travel_expenses"
     t.string   "type"
     t.string   "training"
+    t.integer  "country_id"
+    t.integer  "city_id"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

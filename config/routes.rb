@@ -14,8 +14,14 @@ Rails.application.routes.draw do
   resources :volunteers, :only => [] do
     collection do
       get :edit
+      get :index
+    end
+
+    member do
+      get :show
     end
   end
+
 
   resources :ngo, :only => [] do
     collection do

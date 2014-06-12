@@ -1,0 +1,63 @@
+<div class = "container">
+  <div class = "row"> 
+    <div class = "col-md-6">
+      <%= "#{@user.first_name} #{@user.last_name}" %>
+    </div>
+  </div>
+    <div class = "row"> 
+    <div class = "col-md-6">
+      <%= @user.role%>
+    </div>
+  </div>
+    <div class = "row"> 
+    <div class = "col-md-6">
+      <%= @user.relevant_exp %>
+    </div>
+  </div>
+    <div class = "row"> 
+    <div class = "col-md-6">
+      <%= @user.training %>
+    </div>
+  </div>
+    <div class = "row"> 
+    <div class = "col-md-6">
+      <% if @user.work_remote && @user.work_remote == "1" %>
+          yes
+      <% else %>
+          no
+      <% end %>
+    </div>
+  </div>
+    <div class = "row"> 
+    <div class = "col-md-6">
+      <% if @user.travel_expenses && @user.travel_expenses == "1" %>
+          yes
+      <% else %>
+          no
+      <% end %>
+    </div>
+  </div>
+
+  <div class = "row"> 
+    <div class = "col-md-6">
+      <%= @user.country.name %>
+    </div>
+  </div>
+
+</div>
+
+
+
+ "first_name"
+    t.string   "last_name"
+    t.string   "mobile"
+    t.string   "skype"
+    t.string   "role"
+    t.string   "relevant_exp"
+    t.boolean  "work_remote"
+    t.boolean  "travel_expenses"
+    t.string   "type"
+    t.string   "training"
+    t.integer  "country_id"
+    t.integer  "city_id"
+       t.string   "email",   
