@@ -11,15 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140612032723) do
+ActiveRecord::Schema.define(version: 20140612054143) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "cities", force: true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "countries", force: true do |t|
     t.datetime "created_at"
@@ -59,7 +54,7 @@ ActiveRecord::Schema.define(version: 20140612032723) do
     t.string   "type"
     t.string   "training"
     t.integer  "country_id"
-    t.integer  "city_id"
+    t.string   "city"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

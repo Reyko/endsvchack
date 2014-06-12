@@ -1,3 +1,166 @@
+User.create(:first_name => Faker::Name.first_name,
+ :last_name => Faker::Name.last_name,
+ :email => Faker::Internet.email,
+ :mobile => Faker::PhoneNumber.cell_phone,
+ :skype => Faker::Internet.user_name,
+ :role => "counsellor",
+ :type => "Volunteer",
+ :relevant_exp => Faker::Lorem.paragraph,
+ :work_remote => "yes",
+ :travel_expenses => "yes",
+ :country_id => 214,
+ :city => "London")
+
+
+User.create(:first_name => Faker::Name.first_name,
+ :last_name => Faker::Name.last_name,
+ :email => Faker::Internet.email,
+ :mobile => Faker::PhoneNumber.cell_phone,
+ :skype => Faker::Internet.user_name,
+ :role => "counsellor",
+ :type => "Volunteer",
+ :relevant_exp => Faker::Lorem.paragraph,
+ :work_remote => "yes",
+ :travel_expenses => "yes",
+ :country_id => 68,
+ :city => "Paris")
+
+
+User.create(:first_name => Faker::Name.first_name,
+ :last_name => Faker::Name.last_name,
+ :email => Faker::Internet.email,
+ :mobile => Faker::PhoneNumber.cell_phone,
+ :skype => Faker::Internet.user_name,
+ :role => "counsellor",
+ :type => "Volunteer",
+ :relevant_exp => Faker::Lorem.paragraph,
+ :work_remote => "yes",
+ :travel_expenses => "yes",
+ :country_id => 74,
+ :city => "Berlin")
+
+
+User.create(:first_name => Faker::Name.first_name,
+ :last_name => Faker::Name.last_name,
+ :email => Faker::Internet.email,
+ :mobile => Faker::PhoneNumber.cell_phone,
+ :skype => Faker::Internet.user_name,
+ :role => "counsellor",
+ :type => "Volunteer",
+ :relevant_exp => Faker::Lorem.paragraph,
+ :work_remote => "yes",
+ :travel_expenses => "yes",
+ :country_id => 190,
+ :city => "Madrid")
+
+
+User.create(:first_name => Faker::Name.first_name,
+ :last_name => Faker::Name.last_name,
+ :email => Faker::Internet.email,
+ :mobile => Faker::PhoneNumber.cell_phone,
+ :skype => Faker::Internet.user_name,
+ :role => "counsellor",
+ :type => "Volunteer",
+ :relevant_exp => Faker::Lorem.paragraph,
+ :work_remote => "yes",
+ :travel_expenses => "yes",
+ :country_id => 77,
+ :city => "Athens")
+
+
+User.create(:first_name => Faker::Name.first_name,
+ :last_name => Faker::Name.last_name,
+ :email => Faker::Internet.email,
+ :mobile => Faker::PhoneNumber.cell_phone,
+ :skype => Faker::Internet.user_name,
+ :role => "counsellor",
+ :type => "Volunteer",
+ :relevant_exp => Faker::Lorem.paragraph,
+ :work_remote => "yes",
+ :travel_expenses => "yes",
+ :country_id => 142,
+ :city => "Amsterdam")
+
+
+User.create(:first_name => Faker::Name.first_name,
+ :last_name => Faker::Name.last_name,
+ :email => Faker::Internet.email,
+ :mobile => Faker::PhoneNumber.cell_phone,
+ :skype => Faker::Internet.user_name,
+ :role => "counsellor",
+ :type => "Volunteer",
+ :relevant_exp => Faker::Lorem.paragraph,
+ :work_remote => "yes",
+ :travel_expenses => "yes",
+ :country_id => 96,
+ :city => "Dublin")
+
+
+User.create(:first_name => Faker::Name.first_name,
+ :last_name => Faker::Name.last_name,
+ :email => Faker::Internet.email,
+ :mobile => Faker::PhoneNumber.cell_phone,
+ :skype => Faker::Internet.user_name,
+ :role => "counsellor",
+ :type => "Volunteer",
+ :relevant_exp => Faker::Lorem.paragraph,
+ :work_remote => "yes",
+ :travel_expenses => "yes",
+ :country_id => 13,
+ :city => "Vienna")
+
+
+User.create(:first_name => Faker::Name.first_name,
+ :last_name => Faker::Name.last_name,
+ :email => Faker::Internet.email,
+ :mobile => Faker::PhoneNumber.cell_phone,
+ :skype => Faker::Internet.user_name,
+ :role => "counsellor",
+ :type => "Volunteer",
+ :relevant_exp => Faker::Lorem.paragraph,
+ :work_remote => "yes",
+ :travel_expenses => "yes",
+ :country_id => 52,
+ :city => "Prague")
+
+
+User.create(:first_name => Faker::Name.first_name,
+ :last_name => Faker::Name.last_name,
+ :email => Faker::Internet.email,
+ :mobile => Faker::PhoneNumber.cell_phone,
+ :skype => Faker::Internet.user_name,
+ :role => "counsellor",
+ :type => "Volunteer",
+ :relevant_exp => Faker::Lorem.paragraph,
+ :work_remote => "yes",
+ :travel_expenses => "yes",
+ :country_id => 98,
+ :city => "Rome")
+
+
+User.create(:first_name => Faker::Name.first_name,
+ :last_name => Faker::Name.last_name,
+ :email => Faker::Internet.email,
+ :mobile => Faker::PhoneNumber.cell_phone,
+ :skype => Faker::Internet.user_name,
+ :role => "counsellor",
+ :type => "Volunteer",
+ :relevant_exp => Faker::Lorem.paragraph,
+ :work_remote => "yes",
+ :travel_expenses => "yes",
+ :country_id => 133,
+ :city => "Monaco")
+
+
+
+
+
+
+
+
+
+
+
   Country.create(iso: 'AF', name: 'Afghanistan', iso3: 'AFG')
   Country.create(iso: 'AL', name: 'Albania', iso3: 'ALB')
   Country.create(iso: 'DZ', name: 'Algeria', iso3: 'DZA')
