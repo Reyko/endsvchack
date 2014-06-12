@@ -11,14 +11,9 @@ Rails.application.routes.draw do
     end 
   end
   
-  resources :volunteers, :only => [] do
+  resources :volunteers, :only => [:show,:index] do
     collection do
       get :edit
-      get :index
-    end
-
-    member do
-      get :show
     end
   end
 

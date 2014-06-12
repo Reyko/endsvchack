@@ -1,8 +1,8 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
-  geocoded_by :location   # can also be an IP address
-  after_validation :geocode          # auto-fetch coordinates
+  # geocoded_by :location   # can also be an IP address
+  # after_validation :geocode          # auto-fetch coordinates
 
 
 
@@ -14,8 +14,8 @@ class User < ActiveRecord::Base
 
   belongs_to :country
 
-  def location
-    location = "#{country.name},#{:city}"
-    location
-  end
+  # def location
+  #   location = "#{country.name},#{:city}"
+  #   location
+  # end
 end

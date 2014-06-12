@@ -4,11 +4,12 @@
       <%= "#{@user.first_name} #{@user.last_name}" %>
     </div>
   </div>
+  <div class = "row">
     <div class = "row"> 
     <div class = "col-md-6">
       <%= @user.role%>
     </div>
-  </div>
+    </div>
     <div class = "row"> 
     <div class = "col-md-6">
       <%= @user.relevant_exp %>
@@ -44,8 +45,11 @@
     </div>
   </div>
 
-</div>
+  <div class="col-md-6 user-map" id="map-canvas" data-volunteers="<%= Volunteer.all.to_json%>">
 
+  </div>
+</div>
+</div>
 
 
  "first_name"
